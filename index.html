@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Chúc Mừng Năm Mới</title>
+    </head>
+    <body>
+        <div class="index">
+            <div class="title texttitle">
+                <p class="title-para para">K25PR24</p>
+            </div>
+            <div class="content">
+                <p class='hide'>
+                </p>
+            </div>
+            <div class="center">
+                <p id="demo" style="color: #ffdb80;"></p>
+              
+            </div>
+            <div class="button">
+                <button
+                    class="custom-btn btn-13 btnPush btnRed"
+                    onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10) ,hide.classList.add('active') "
+                    
+                >
+                     Click me
+                </button>
+            </div>
+            <div class="title-bottom">
+                <h2 class="title-bottom-text">-HÁI LỘC ĐẦU XUÂN-</h2>
+                <h4 class="title-bottom-wish">Happy new year 2022</h4>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        const hide = document.querySelector('.hide')
+        function getRndInteger(min, max) {
+            return list[Math.floor(Math.random() * list.length)];
+        }
+        var list = [
+            "2021 qua rồi, hãy bắt đầu chuyến hành trình 2022 đầy năng suất và thành công nhéeeeeeeee! Nhớ là phải luôn hạnh phúc đó nghen",
+            "Nếu ai hỏi hạnh phúc là gì, mình xin đáp: Sống với đam mê, hết mình với mơ ước. Chúc bạn 2022 đầy trọn vẹn và nhớ giữ gìn sức khỏe nha!",
+            "Sức khỏe là điều cần thiết ngay lúc này, Chúc bạn có thật nhiều sức khỏe để khiến 2022 trở thành 1 năm khó quên nha!",
+            "Tiền bạc là phù du nhưng mà chúc bạn tôi một năm tiền đầy túi để có thể Mang Tiền Về Cho Mẹ nhéeeee!",
+            " Hãy giữ mãi nụ cười trên môi để biến 2022 như con đường trải hoa dành cho riêng bạn nhaaaa.",
+            "Bạn có thấy 2021 ngập tràn drama? Mình sẽ dùng năng lượng của vũ trụ giúp bạn có một năm 2022 đầy trong lành và đẹp đẽ! 2022 đầy lành mạnh và thành công nghen.",
+        ];
+    </script>
+</html>
